@@ -1,53 +1,9 @@
-File: readme.txt
+SimpleScripting
+===============
 
-Abstract: readme file
-
-Version: 1.0
-
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by 
-Apple Inc. ("Apple") in consideration of your agreement to the
-following terms, and your use, installation, modification or
-redistribution of this Apple software constitutes acceptance of these
-terms.  If you do not agree with these terms, please do not use,
-install, modify or redistribute this Apple software.
-
-In consideration of your agreement to abide by the following terms, and
-subject to these terms, Apple grants you a personal, non-exclusive
-license, under Apple's copyrights in this original Apple software (the
-"Apple Software"), to use, reproduce, modify and redistribute the Apple
-Software, with or without modifications, in source and/or binary forms;
-provided that if you redistribute the Apple Software in its entirety and
-without modifications, you must retain this notice and the following
-text and disclaimers in all such redistributions of the Apple Software. 
-Neither the name, trademarks, service marks or logos of Apple Inc. 
-may be used to endorse or promote products derived from the Apple
-Software without specific prior written permission from Apple.  Except
-as expressly stated in this notice, no other rights or licenses, express
-or implied, are granted by Apple herein, including but not limited to
-any patent rights that may be infringed by your derivative works or by
-other works in which the Apple Software may be incorporated.
-
-The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
-MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
-THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
-FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
-OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
-
-IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
-OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
-MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
-AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
-STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGE.
-
-Copyright (C) 2008 Apple Inc. All Rights Reserved. 
-
-
+ABOUT:
 
 This sample illustrates the initial steps required to make an application scriptable.  Other samples in the SimpleScripting* series build on top of this sample to show how to add additional scripting functionality.
-
 
 
 Step 1:  Setting up
@@ -79,7 +35,7 @@ Step 2: Advertise your scriptability
 
 Add these two entries to your application's Info.plist file:
 
-	<key>NSAppleScriptEnabled</key>
+    <key>NSAppleScriptEnabled</key>
     <string>YES</string>
     
     <key>OSAScriptingDefinition</key>
@@ -87,7 +43,7 @@ Add these two entries to your application's Info.plist file:
 
 The first marks your application as one that supports scripting, the second lets the system know where to look for your application's scripting definition file.  You should use the file name you used in step 1.
 
-http://developer.apple.com/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_implement/chapter_4_section_7.html
+http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_evolution/SAppsEvolution.html
 
 
 
@@ -243,11 +199,11 @@ Step 9:  Where to next?
 
 Well, now that you have the very basics in hand, you're all ready to start adding scriptability to your application.  But, careful planning before you start adding in scripting features will be well worth your while.  So, please consider reading the following documentation.
 
-- The items listed in the section "Making Your Application Scriptable" on this page are essential reading.  Everyone new to scripting should read through these documents and familiarize themselves with the topics discussed.
-http://developer.apple.com/referencelibrary/GettingStarted/GS_AppleScript/index.html
+- The items listed in the section "Implementing a Scriptable Application" on this page are essential reading.  Everyone new to scripting should read through these documents and familiarize themselves with the topics discussed.
+http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_implement/SAppsImplement.html
 
 - "Designing for Scriptability in Cocoa Scripting Guide provides a high-level checklist of design issues and tactics:
-http://developer.apple.com/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/index.html
+http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_design_apps/SAppsDesignApp.htmlE
 
 - This Scripting Interface Guidelines document provides more detailed information you should consider when adding scriptability to your application: 
 http://developer.apple.com/technotes/tn2002/tn2106.html
@@ -277,5 +233,23 @@ SimpleScriptingVerbs
 	http://developer.apple.com/samplecode/SimpleScriptingVerbs/
 
 
+===========================================================================
+BUILD REQUIREMENTS
 
+Xcode 3.2, Mac OS X 10.6 Snow Leopard or later.
 
+===========================================================================
+RUNTIME REQUIREMENTS
+
+Mac OS X 10.6 Snow Leopard or later.
+
+===========================================================================
+CHANGES FROM PREVIOUS VERSIONS
+
+Version 1.1
+- Project updated for Xcode 4.
+Version 1.0
+- Initial Version
+
+===========================================================================
+Copyright (C) 2008-2011 Apple Inc. All rights reserved.
